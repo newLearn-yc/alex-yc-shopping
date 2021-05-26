@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习页（pin-you-go）好货，便宜，包配送，珍品低价</title>
+    <meta name="description" content="品优购JD.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、
+    服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
+    <!-- 上面是网站说明，关键词搜索，方便客户的搜索到网站 -->
+
+    <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,品优购" />
+    <!-- 这个也是关键词搜索，尽量把公司最好的产品放入，只能用英文的“，”逗号隔开。 -->
+
+    <link rel="stylesheet" href="../../shoping/css/base.css">
+    <!-- 引入初始化css的文件 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 引入公共的样式文件 -->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <!-- 这行代码只是固定导入图标的注意就行 -->
+    <link rel="stylesheet" href="../css/lian_xi.css">
+    <style>
+        .logo a {
+            display: block;
+            /* a没有大小的所以要求转化成为块级元素 */
+            width: 171px;
+            height: 61px;
+            background: url(../../shoping/images/logo.png) no-repeat;
+            font-size: 0;
+        }
+
+        /* base的基础设置 */
+        * {
+            margin: 0;
+            padding: 0;
+            /* css3的盒子模型 */
+            box-sizing: border-box;
+        }
+
+        em,
+        i {
+            font-style: normal;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        img {
+            border: 0;
+            vertical-align: middle;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #c81623;
+        }
+
+        button,
+        input {
+            font-family: Microsoft YaHei;
+            border: 0;
+            outline: none;
+        }
+
+        body {
+            background-color: #fff;
+            font: 12px/1.5 Microsoft YaHei;
+            color: #666;
+            -webkit-font-smoothing: antialiased;
+            /*css3的写法，不要文字有太多锯齿形*/
+        }
+
+        .clearfix::after {
+            visibility: hidden;
+            clear: both;
+            display: block;
+            content: ".";
+            height: 0;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+    </style>
+
+<body>
+    <section class="shortcut" id="fh">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>品优购欢迎您！&nbsp;</li>
+                    <li>
+                        <a href="#">
+                            请登录！
+                        </a>
+                        &nbsp;
+                        <a href="deng_lu.html" class="style_red">
+                            免费注册！
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li>我的订单</li>
+                    <li>|</li>
+                    <li class="arrow-icon">我的品优购</li>
+                    <li>|</li>
+                    <li>品优购会员</li>
+                    <li>|</li>
+                    <li>企业采购</li>
+                    <li>|</li>
+                    <li class="arrow-icon">关注品优</li>
+                    <li>|</li>
+                    <li class="arrow-icon">客服服务</li>
+                    <li>|</li>
+                    <li class="arrow-icon">网站导航</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 头部-2（头部主体） -->
+    <header class="header w" id="sy">
+        <div class="logo">
+            <h1>
+                <a href="../index.html" title="品优购商城"></a>
+            </h1>
+        </div>
+
+        <!--  头部-2-1（头部主体-search） -->
+        <div class="search">
+            <form action="#">
+                <input type="text" placeholder="请搜索内容..." class="" required="required" class="pink"
+                    autofocus="autofocus" name="text-1" autocomplete="on">
+            </form>
+            <button>
+                搜索
+            </button>
+
+        </div>
+        <!-- 头部-2-2（头部主体-hot-wrods） -->
+        <div class="hotwords">
+            <a href="#" class="style_red">优惠券首发</a>
+            <a href="#">亿元优惠</a>
+            <a href="#">9.9元团购</a>
+            <a href="#">美满99减30</a>
+            <a href="#">办公用品</a>
+            <a href="#">电脑</a>
+            <a href="#">通信</a>
+        </div>
+
+        <!-- 头部-2-3（头部主体-右侧购物车style） -->
+        <div class="shop-car">
+            <img src="D:\yc\.vscode\html\品优购（实例）\shoping\images\我的购物车-1.png" alt="...">
+            我的购物车
+            <!-- 头部-2-4（头部主体-count） -->
+            <i class="count">457</i>
+        </div>
+    </header>
+    <!-- nav模块制作 -->
+    <div class="nav">
+        <div class="w">
+            <div class="dropdown">
+                <div class="dt">全部商品分类</div>
+            </div>
+            <!-- nav模块制作-navitems -->
+            <div class="navitems">
+                <ul>
+                    <li><a href="#">服装城</a></li>
+                    <li><a href="#">美妆馆</a></li>
+                    <li><a href="#">传智超市</a></li>
+                    <li><a href="#">全球购</a></li>
+                    <li><a href="#">闪购</a></li>
+                    <li><a href="#">团购</a></li>
+                    <li><a href="#">拍卖</a></li>
+                    <li><a href="#">有趣</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="lian_xi_comtent w clearfix">
+        <div class="box_big clearfix">
+            <ul>
+                <li><a href="#">
+                        <img src="../uoload/lian_xi/1-1.webp" alt="...">
+                        <h3>云海螺英语口语陪练一对一课程英语 网课成人少儿</h3>
+                        <p>249.00元</p>
+                    </a></li>
+                <li><a href="#">
+                        <img src="../uoload/lian_xi/1-2.jpg" alt="...">
+                        <h3>流利说®发音英语口语课程 地道发 音2.0一年尊享</h3>
+                        <p>2688.00元</p>
+                    </a></li>
+                <li><a href="#">
+                        <img src="../uoload/lian_xi/1-3.png" alt="...">
+                        <h3>流利说®发音英语口语课程 动教学入门教材课程一对一教学</h3>
+                        <p>698.00元</p>
+                    </a></li>
+                <li><a href="#">
+                        <img src="../uoload/lian_xi/1-4.jpg" alt="...">
+                        <h3>沪江网校日语网课0-N2入门自学零基 础学习视频教程课程</h3>
+                        <p>1880.00元</p>
+                    </a></li>
+                <li><a href="#">
+                        <img src="../uoload/lian_xi/1-5.jpg" alt="...">
+                        <h3>新东方在线雅思网络课程雅思学术7 分6,5分6旗舰网课视频课件机考</h3>
+                        <p>2880.00元</p>
+                    </a></li>
+                <li><a href="#">
+                        <img src="../uoload/lian_xi/1-6.jpg" alt="...">
+                        <h3>潭州教育日语N1培训0基础入门能力 考级真人教学在线</h3>
+                        <p>500.00-9880.00元</p>
+                    </a></li>
+                <li><a href="#">
+                        <img src="../uoload/lian_xi/1-7.jpg" alt="...">
+                        <h3>2021考研日语网课学习日语入门自 学零基础N2视频教程课程</h3>
+                        <p>469.00元</p>
+                    </a></li>
+                <li><a href="#">
+                        <img src="../uoload/lian_xi/1-8.jpg" alt="...">
+                        <h3>立刻说成人英语口语一对一欧美外教 2021考研日语网课学习</h3>
+                        <p>1680.00元</p>
+                    </a></li>
+                <li><a href="#">
+                        <img src="../uoload/lian_xi/1-9.jpg" alt="...">
+                        <h3>立刻说成人英语口语一对一欧美外教 真人在线陪练直播课</h3>
+                        <p>499.00元</p>
+                    </a></li>
+                <li><a href="#">
+                        <img src="../uoload/lian_xi/1-10.jpg" alt="...">
+                        <h3>流利说®180天课程英语口语学习在 线教育零基础英语自学一对一</h3>
+                        <p>618.00元</p>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- next&last的模块 -->
+    <div class="div-box">
+        <a href="#" class="ts">&lt;&lt;上一页</a>
+        <a href="#" class="ts-1">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">...</a>
+        <a href="#" class="ts">&gt;&gt;下一页</a>
+
+        到
+        <!--设置转化成为行内块元素不要搞错了，尽量是在主要的盒子上设置，避免后续的布局麻烦-->
+        <form action="#" class="text-1">
+            <select name="text" class="text-1">
+                <option value="第一页">第一页</option>
+                <option value="第二页">第二页</option>
+                <option value="第三页">第三页</option>
+                <option value="第四页">第四页</option>
+                <option value="第五页">第五页</option>
+            </select>
+        </form>
+        页
+        <button>确定</button>
+        <hr>
+        <div class="box-2">
+
+        </div>
+        <!-- 底部模块的制作footer-1 -->
+        <footer class="footer" id="db">
+            <div class="w">
+                <div class="mod_service">
+                    <ul>
+                        <li>
+                            <h5>
+                                <img src="D:\yc\.vscode\html\品优购（实例）\shoping\images\底部图标-1.png" alt="...">
+                            </h5>
+                            <div class="service_txt">
+                                <h4>正品保障</h4>
+                                <p>正品保障，提供发票</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h5 class="h5-2">
+                                <img src="D:\yc\.vscode\html\品优购（实例）\shoping\images\底部图标-2.png" alt="...">
+                            </h5>
+                            <div class="service_txt">
+                                <h4>正品保障</h4>
+                                <p>正品保障，提供发票</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h5 class="h5-3">
+                                <img src="D:\yc\.vscode\html\品优购（实例）\shoping\images\底部图标-3.png" alt="...">
+                            </h5>
+                            <div class="service_txt">
+                                <h4>正品保障</h4>
+                                <p>正品保障，提供发票</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h5 class="h5-3">
+                                <img src="D:\yc\.vscode\html\品优购（实例）\shoping\images\底部图标-4.png" alt="...">
+                            </h5>
+                            <div class="service_txt">
+                                <h4>正品保障</h4>
+                                <p>正品保障，提供发票</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h5 class="h5-4">
+                                <img src="D:\yc\.vscode\html\品优购（实例）\shoping\images\底部图标-4.png" alt="...">
+                            </h5>
+                            <div class="service_txt">
+                                <h4>正品保障</h4>
+                                <p>正品保障，提供发票</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mod_help w">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员价绍</a></dd>
+                    <dd><a href="#">生活旅途</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员价绍</a></dd>
+                    <dd><a href="#">生活旅途</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员价绍</a></dd>
+                    <dd><a href="#">生活旅途</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员价绍</a></dd>
+                    <dd><a href="#">生活旅途</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">大家电</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd>
+                        <img src="D:\yc\.vscode\html\品优购（实例）\shoping\images\二维码-1.png" alt="...">
+                        品优购客户端
+                    </dd>
+                </dl>
+            </div>
+    </div>
+    <!-- footer-last-mod_copyright模块 -->
+    <div class="mod_copyright">
+        <div class="link">
+            <a href="#">关于我们</a>
+            |<a href="#">联系我们</a>
+            |<a href="#">联系客服</a>
+            |<a href="#">商家入驻</a>
+            |<a href="#">营销中心</a>
+            |<a href="#">手机品优购</a>
+            |<a href="#">友情链接</a>
+            |<a href="#">销售联盟</a>
+            |<a href="#">品优购社区</a>
+            |<a href="#">品优购公益</a>
+            |<a href="#">English Site</a>
+            |<a href="#">Contact U</a>
+        </div>
+        <div class="copyright">
+            地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000<br />
+            传真：010-82935100 邮箱: zhanghj+itcast.cn<br />
+            京ICP备08001421号京公网安备110108007702
+        </div>
+    </div>
+    </footer>
+</body>

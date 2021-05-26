@@ -1,0 +1,124 @@
+/* 这是lian_xi独有的css */
+.nav {
+    border-bottom: 6px solid #b1191a;
+    /* background-color: skyblue; */
+}
+
+.box_big ul li {
+    width: 230px;
+    height: 300px;
+    /* background-color: pink; */
+    /* display: inline-block; */
+    float: left;
+    margin-top: 20px;
+    padding: 0 5px;
+    border: 4px solid transparent;
+}
+
+.box_big ul li:hover {
+    border-radius: 20px;
+    border: 2px solid #ff0000;
+    transition: all .4s;
+}
+
+.box_big ul li:hover {
+    background-color: rgb(184, 159, 159);
+    transition: all .4s;
+}
+
+.box_big ul li:hover h3 {
+    color: blueviolet;
+    transition: all .4s;
+}
+
+.box_big ul li:hover p {
+    color: cyan;
+    transition: all .4s;
+}
+
+.box_big ul li:nth-child(n+6) {
+    margin-bottom: 20px;
+}
+
+.box_big ul li img {
+    height: 175px;
+    width: 160px;
+    padding: 20px 10px;
+    margin-top: 25px;
+}
+
+#db {
+    padding-top: 200px;
+}
+
+.box_big ul li {
+    text-align: center;
+    margin-left: 5px;
+}
+
+.box_big ul li h3 {
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.box_big ul li p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #ff6709;
+}
+
+
+
+.div-box>a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: #f7f7f7;
+    border: 1px solid #cccccc;
+    text-decoration: none;
+    text-align: center;
+    line-height: 36px;
+    color: black;
+    font-size: 15px;
+}
+
+.div-box {
+    text-align: center;
+    /* 给父亲添加text-align就又快捷又方便
+意为盒子居中，文字也是被包含于盒子之内的，所以会收到影响 */
+}
+
+.div-box .ts {
+    width: 85px;
+}
+
+.div-box .ts-1 {
+    border: none;
+    background-color: #fff;
+}
+
+
+.div-box .text-1 {
+    height: 36px;
+    width: 45px;
+    border: 1px solid #ccc;
+    outline: none;
+    display: inline-block;
+}
+
+button {
+    width: 60px;
+    height: 36px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+}
+
+.box-2 {
+    width: 0;
+    height: 0;
+    border-color: transparent red transparent transparent;
+    border-style: none;
+    border-width: 22px 8px 0 0;
+}

@@ -1,0 +1,441 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 版心 */
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+/* 左右浮动总和类 */
+.style_red {
+    color: #c81623;
+}
+
+
+                             /* 下面是common的公共样式------头部 */
+
+/* 头部-1(快捷导航模块) */
+.shortcut {
+    /* 宽度不给自己适应 */
+    height: 31px;
+    background-color: #f1f1f1;
+    line-height: 31px;
+    /* 这里又是一个小细节！给父元素加上行高，子元素则继承，达到更好的效果。
+    在布局里，特别是导航栏文字布局里常用，记住！！！ */
+}
+
+.shortcut ul li {
+    float: left;
+    /* 这里是需要全部的li都浮动，索性选择了 .shortcut中的全部li标签，不影响其余盒子的样式。 */
+}
+
+.shortcut .fr ul li:nth-child(even) {
+    /* 选择全部偶数的li */
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 15px 0;
+}
+
+.arrow-icon::after {
+    /* 给添加小图标 */
+    content: '>';
+    margin-left: 6px;
+}
+
+.arrow-icon:hover {
+    color: red;
+}
+
+/* 头部-2（头部主体-logo） */
+.header {
+    height: 150px;
+    position: relative;
+    /* 测试背景 */
+    /* background-color: pink; */
+}
+
+.logo {
+    width: 171px;
+    height: 61px;
+
+    position: absolute;
+    top: 25px;
+}
+
+.logo a {
+    display: block;
+    /* a没有大小的所以要求转化成为块级元素 */
+    width: 171px;
+    height: 61px;
+    background: url(../shoping/images/logo.png) no-repeat;
+    font-size: 0;
+}
+
+/* 头部-2-1（头部主体-search） */
+.search {
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+
+    position: absolute;
+    left: 346px;
+    top: 25px;
+}
+
+.search input {
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+
+    float: left;
+}
+
+button {
+    width: 80px;
+    height: 32px;
+    background-color: #b1191a;
+
+    float: left;
+
+    font-size: 16px;
+    color: #fff;
+}
+
+button:hover {
+    color: snow;
+    background-color: orangered;
+}
+
+/* 头部-2-2（头部主体-hot-wrods） */
+.hotwords {
+    position: absolute;
+    top: 66px;
+    left: 346px;
+}
+
+.hotwords a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* 头部-2-3（头部主体-右侧购物车style） */
+.shop-car {
+    width: 140px;
+    height: 35px;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+
+    position: absolute;
+    right: 60px;
+    top: 25px;
+
+    line-height: 35px;
+    text-align: center;
+}
+
+.shop-car::after {
+    content: '>';
+    margin-left: 6px;
+}
+
+.shop-car:hover {
+    background-color: orangered;
+    color: snow;
+}
+
+/* 头部-2-4（头部主体-右侧购物车style-count） */
+.count {
+    height: 14px;
+    color: #fff;
+    background-color: #e60012;
+
+    padding: 0 5px;
+
+    position: absolute;
+    top: -5px;
+    /* right: 20px; */
+    left: 105px;
+
+    line-height: 14px;
+
+    /* border: 5px solid #e60012; */
+    /* 画蛇添足，下面是pink老师的操作 */
+    border-radius: 7px 7px 7px 0;
+
+    transition: all .3s;
+}
+
+.count:hover {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* nav模块制作  */
+.nav {
+    height: 47px;
+    /* width不需要 */
+    border-bottom: 2px solid #b1191a;
+}
+
+/* 左侧的style */
+.dropdown {
+    float: left;
+    width: 210px;
+    height: 45px;
+    background-color: #b1191a;
+}
+
+/* 右侧的style */
+.navitems {
+    float: left;
+
+}
+
+.dropdown .dt {
+    width: 100%;
+    height: 100%;
+
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+
+    font-size: 18px;
+}
+
+.dropdown .dd {
+    width: 210px;
+    height: 465px;
+    background-color: #c81623;
+    margin-top: 2px;
+
+                                                                               /* display: none; */
+    /* 暂时隐藏 */
+}
+
+.dropdown .dd ul li {
+    height: 31px;
+    line-height: 31px;
+
+    margin-left: 2px;
+    padding-left: 10px;
+}
+
+.dropdown .dd ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.li-1 {
+    padding: 0 10px;
+    transition: all .3s;
+
+    position: relative;
+}
+
+.dropdown .dd li:hover {
+    padding-left: 20px;
+}
+
+.dropdown .dd .li-1 a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.dropdown .dd ul li:hover {
+    background-color: #fff;
+}
+
+.dropdown .dd ul li:hover a {
+    color: #c81623;
+}
+
+/* after的>的伪元素 */
+.dropdown .dd ul li::after {
+    content: '>';
+    color: #f1f1f1;
+
+    position: absolute;
+    top: 1px;
+    right: 10px;
+
+    font-size: 14px;
+}
+
+/* nav模块制作-navitems */
+.navitems ul li {
+    float: left;
+}
+
+.navitems ul li a {
+    height: 45px;
+    line-height: 45px;
+    display: block;
+    font-size: 16px;
+
+    padding: 0 25px;
+    /* 给a  padding值是为了增大交互范围 */
+}
+
+/* navitems的交互效果 */
+.navitems ul li:hover a {
+    background-color: #c81623;
+    color: snow;
+}
+
+.navitems ul li a {
+    transition: all .5s;
+}
+
+
+                                 /* 下面是common的公共样式------ 底部 */
+         /* 底部模块的制作footer-1 */
+        .footer {
+            /* 不给widthe只给高度 */
+            height: 415px;
+            background-color: #f5f5f5;
+
+            padding-top: 30px;
+        }
+
+        /* 下面是mod_service的style */
+        .mod_service {
+            height: 80px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .mod_service ul li {
+            width: 240px;
+            height: 50px;
+
+            float: left;
+            padding-left: 35px;
+        }
+
+        .mod_service ul li h5 {
+            width: 50px;
+            height: 50px;
+
+            float: left;
+
+            margin-right: 8px;
+            border: 7px solid #f5f5f5;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .service_txt h4 {
+            font-size: 14px;
+
+        }
+
+        .service_txt p {
+            font-size: 12px;
+        }
+
+        /* 下面是三个不同style的修改自己的 */
+
+        .mod_service ul li .h5-2 {
+            width: 50px;
+            height: 50px;
+
+            float: left;
+
+            margin-right: 8px;
+            border: 1px solid #f5f5f5;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .mod_service ul li .h5-3 {
+            width: 50px;
+            height: 50px;
+
+            float: left;
+
+            margin-right: 8px;
+            border: 2px solid #f5f5f5;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .mod_service ul li .h5-3 {
+            width: 50px;
+            height: 50px;
+
+            float: left;
+
+            margin-right: 8px;
+            border: 2px solid #f5f5f5;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .mod_service ul li .h5-4 {
+            width: 50px;
+            height: 50px;
+
+            float: left;
+
+            margin-right: 8px;
+            border: 2px solid #f5f5f5;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        /* 下面是mod_help的style */
+        .mod_help {
+            height: 185px;
+            border-bottom: 2px solid #ccc;
+
+            padding-top: 20px;
+            padding-left: 50px;
+        }
+
+        .mod_help dl dt {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .mod_help dl {
+            /* display: inline-block; */
+            float: left;
+
+            width: 200px;
+        }
+
+        .mod_help dl:last-child {
+            width: 90px;
+            text-align: center;
+        }
+
+        .mod_help dl img {
+            width: 120px;
+            height: 100px;
+        }
+
+        .mod_help dl:last-child dt {
+            font-size: 16px;
+        }
+
+        /* footer-last-mod_copyright模块 */
+        .mod_copyright {
+            text-align: center;
+            padding-top: 20px;
+
+        }
+
+        .link {
+            margin-bottom: 15px;
+        }
+
+        .copyright {
+            line-height: 20px;
+        }
+
+        .link a {
+            margin: 0 3px;
+        }

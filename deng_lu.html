@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>品优购商城（pin-you-go）好货，便宜，包配送，珍品低价</title>
+    <meta name="description" content="品优购JD.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、
+    服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
+    <!-- 上面是网站说明，关键词搜索，方便客户的搜索到网站 -->
+
+    <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,品优购" />
+    <!-- 这个也是关键词搜索，尽量把公司最好的产品放入，只能用英文的“，”逗号隔开。 -->
+
+    <link rel="stylesheet" href="../../shoping/css/base.css">
+    <!-- 引入初始化css的文件 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 引入公共的样式文件 -->
+    <link rel="shortcut icon" href="../favicon.ico">
+    <!-- 这行代码只是固定导入图标的注意就行 -->
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- 这里是引入css的样式 -->
+    <link rel="stylesheet" href="../css/deng_lu.css">
+    <!-- 引入登录的css样式 -->
+    <script src="../js/dl.js"></script>
+    <!-- 引入js文件 -->
+
+    <style>
+        .success {
+            color: green;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .logo a {
+            display: block;
+            /* a没有大小的所以要求转化成为块级元素 */
+            width: 165px;
+            height: 50px;
+            background: url(../../shoping/images/logo.png) no-repeat;
+            font-size: 0;
+        }
+
+        .safe em {
+            padding: 0 12px;
+            color: #ffffff;
+        }
+
+        .safe {
+            padding-left: 160px;
+        }
+
+        .ruo {
+            background-color: #de1111;
+        }
+
+        .zhong {
+            background-color: #40b83f;
+        }
+
+        .qiang {
+            background-color: #f79100;
+        }
+
+        .agree input {
+            vertical-align: middle;
+        }
+
+        .agree {
+            padding-left: 95px;
+        }
+
+        .agree p {
+            display: inline-block;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .agree a {
+            font-size: 12px;
+            color: #1ba1e6;
+            border-bottom: 2px solid transparent;
+        }
+
+        .agree a:hover {
+            border-bottom: 2px solid #de1111;
+            transition: all 1s;
+        }
+
+        .btn {
+            width: 200px;
+            height: 34px;
+            background-color: #c81623;
+            color: #fff;
+            margin: 5px 0 0 130px;
+        }
+
+
+
+        /* base的基础设置 */
+        * {
+            margin: 0;
+            padding: 0;
+            /* css3的盒子模型 */
+            box-sizing: border-box;
+        }
+
+        em,
+        i {
+            font-style: normal;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        img {
+            border: 0;
+            vertical-align: middle;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #c81623;
+        }
+
+        button,
+        input {
+            font-family: Microsoft YaHei;
+            border: 0;
+            outline: none;
+        }
+
+        body {
+            background-color: #fff;
+            font: 12px/1.5 Microsoft YaHei;
+            color: #666;
+            -webkit-font-smoothing: antialiased;
+            /*css3的写法，不要文字有太多锯齿形*/
+        }
+
+        .clearfix::after {
+            visibility: hidden;
+            clear: both;
+            display: block;
+            content: ".";
+            height: 0;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w">
+        <header>
+            <div class="logo1">
+                <a href="../index.html">
+                    <img src="../images/logo-2.jpg" alt="...">
+                </a>
+            </div>
+        </header>
+        <div class="registerarea w">
+            <h3>注册新用户
+                <div class="login">
+                    <a href="../index.html" target="_blank">
+                        我有账号，去<a href="deng_lu.html" class="a-2">
+                            登录
+                        </a>
+                    </a>
+                </div>
+            </h3>
+
+            <div class="reg-form">
+                <ul>
+                    <li><label for="">手机号：</label> <input type="text" class="inp" id="input_phone"> <span
+                            class="error"><i class="error_icon"></i>手机号码不正确，重新输入</span></li>
+
+                    <li><label for="">短信验证码：</label> <input type="text" class="inp" id="input_msg"> <span
+                            class="error-1"><i class="ture_icon"></i>手机号码正确</span></li>
+
+                    <li><label for="">登陆密码：</label> <input type="password" class="inp" id="input_pwd"> <span
+                            class="error-1"><i class="ture_icon"></i>手机号码正确</span></li>
+
+                    <div class="safe">
+                        安全程度&nbsp;&nbsp;&nbsp;
+                        <em class="ruo">弱</em>
+                        <em class="zhong">中</em>
+                        <em class="qiang">强</em>
+                    </div>
+
+                    <li><label for="">确认密码：</label> <input type="password" class="inp" id="input_second_check"> <span
+                            class="error"><i class="error_icon"></i>手机号码不正确，重新输入</span></li>
+
+                    <li class="agree">
+                        <input type="checkbox" name="" id="">
+                        <p>同意注册</p>
+                        <a href="#" title="点击查看用户协议">
+                            《点击查看用户协议》
+                        </a>
+                    </li>
+                    <li>
+                        <input type="submit" value="完成注册" class="btn" id="wczc">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="ew">
+            <li>
+                <span>你的账户是：</span>
+                <i id="user"></i>
+            </li>
+            <li>
+                <span>你的密码是：</span>
+                <i id="user_pwd"></i>
+            </li>
+            <h1 class="h11">你已经完成注册！购物愉快！</h1>
+
+            <i id="close"> 关闭</i>
+        </div>
+
+        <footer>
+            <!-- footer-last-mod_copyright模块 -->
+            <div class="mod_copyright">
+                <div class="link">
+                    <a href="#">关于我们</a>
+                    |<a href="#">联系我们</a>
+                    |<a href="#">联系客服</a>
+                    |<a href="#">商家入驻</a>
+                    |<a href="#">营销中心</a>
+                    |<a href="#">手机品优购</a>
+                    |<a href="#">友情链接</a>
+                    |<a href="#">销售联盟</a>
+                    |<a href="#">品优购社区</a>
+                    |<a href="#">品优购公益</a>
+                    |<a href="#">English Site</a>
+                    |<a href="#">Contact U</a>
+                </div>
+                <div class="copyright">
+                    地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000<br />
+                    传真：010-82935100 邮箱: zhanghj+itcast.cn<br />
+                    京ICP备08001421号京公网安备110108007702
+                </div>
+        </footer>
+    </div>
+
+</body>

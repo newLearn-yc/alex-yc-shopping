@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* css3的盒子模型 */
+    box-sizing: border-box;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c81623;
+}
+
+button,
+input {
+    font-family: Microsoft YaHei;
+    border: 0;
+    outline: none;
+}
+
+body {
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei;
+    color: #666;
+    -webkit-font-smoothing :antialiased;
+    /*css3的写法，不要文字有太多锯齿形*/
+}
+
+.clearfix::after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}

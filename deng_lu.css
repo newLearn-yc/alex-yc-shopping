@@ -1,0 +1,160 @@
+.logo1 {
+    margin-top: 10px;
+}
+
+/* 头的style */
+header {
+    height: 84px;
+    border-bottom: 3px solid #c81523;
+}
+
+/* 身体部分 */
+.registerarea {
+    height: 522px;
+    border: 2px solid #706868;
+    border-radius: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/* .registerarea:hover {
+    border: 2px solid #706868;
+    transition: all .5s;
+    overflow: hidden;
+} */
+
+.registerarea h3 {
+    height: 42px;
+    border-bottom: 2px solid #ccc;
+    background-color: #ececec;
+
+    line-height: 42px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.registerarea .login {
+    float: right;
+    font-size: 14px;
+}
+
+.registerarea .login .a-2 {
+    color: red;
+}
+
+/* reg-form */
+.reg-form {
+    width: 600px;
+    margin: 50px auto 0;
+}
+
+.reg-form ul li label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+
+.reg-form ul li {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.reg-form ul li .inp {
+    width: 242px;
+    height: 37px;
+    border: 2px solid #cccc;
+    outline: none;
+}
+
+.error {
+    color: red;
+}
+
+.error_icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url(uoload/注册/1-1.jpg) no-repeat;
+    vertical-align: middle;
+}
+
+.ture_icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url(uoload/注册/1-2.jpg) no-repeat;
+    vertical-align: middle;
+}
+
+.error-1 {
+    color: green;
+}
+
+.reg-form {
+    border: 3px solid transparent;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+    top: -25px;
+}
+
+.reg-form:hover {
+    border: 3px solid #ccc;
+    background-color: #ececec;
+    transition: all .5s;
+}
+
+.ew{
+    width: 800px;
+    height: 400px;
+    position: relative;
+    top: -439px;
+    left: 210px;
+    background-color: rgb(221, 237, 243);
+    display: none;
+    border: 2px solid yellow;
+    border-radius: 50px;
+}
+
+
+.ew li {
+    width: 100%;
+    background-color: transparent;
+    margin-top: 30px;
+    height: 100px;
+    position: relative;
+    top:29px;
+}
+.ew li span{
+    font-size: 22px;
+    color: black;
+    margin-left: 20px;
+    margin-right: 1px;
+}
+.h11{
+    position: relative;
+    top: 66px;
+    left: 17px;
+    font-size: 30px;
+    text-align: center;
+}
+.ew li i{
+    font-size: 24px;
+}
+
+#close{
+    position: relative;
+    top: -303px;
+    left: 753px;
+    font-size: 22px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20%;
+}
+
+.mod_copyright{
+    margin-top: 20px;
+}
